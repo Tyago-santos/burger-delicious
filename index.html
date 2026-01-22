@@ -1,56 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>buger_delicious</title>
-  </head>
-    <header>
-      <nav class="container p-4 flex items-center justify-between ">
-          <a class="flex items-center gap-1" href="/">
-            <span class="text-white text-2xl font-['Calistoga']">Burger</span>
-            <span class="size-2 bg-[#FE6A0F] rounded-full"></span>
-            <span class="text-white text-2xl font-['Calistoga']">Delicious</span>
-          </a>
-          <div class="md:hidden">
-            <i class="fa-solid fa-bars text-white text-2xl "></i>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/vite.svg"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="/src/style.css"
+        />
+        <title>buger_delicious</title>
 
-        <ul class="hidden md:flex">
-          <li>Inicio</li>
-          <li>Burgers</li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-    </header>
-      <section class="flex items-center flex-col pt-4  gap-5">
-        
-        <h1 class="text-white text-4xl text-center font-bold  ">
-          O Hamburguer mais delicioso.😋 
-        </h1>
+        <!--LINKS DE TERCEIROS-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-black/100">
+        <header>
+            <nav class="container p-4 flex items-center justify-between">
+                <a
+                    class="flex items-center gap-1"
+                    href="/"
+                >
+                    <span class="text-white text-2xl font-['Calistoga']"
+                        >Burger</span
+                    >
+                    <span class="size-2 bg-[#FE6A0F] rounded-full"></span>
+                    <span class="text-white text-2xl font-['Calistoga']"
+                        >Delicious</span
+                    >
+                </a>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars text-white text-2xl"></i>
+                </div>
 
-        <p class="text-white text-center font-semibold">A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
-        <button class=" text-white p-4 w-60 rounded-sm   font-semibold bg-[#FE6A0F]">Fazer pedido</button>
-        
-        <div class="size-50">
-          <img class="block" src="/heroBurger.png" alt="" srcset="">
-        </div>
-      </section>
-      <section class="bg-[#1F1F1F] px-4 py-6">
-          <P class="text-2xl text-white  my-8 text-center">Pesquise o seu Hamburguer favorito!</P>
-          <div class="flex rounded-sm items-center p-4 bg-[#2B2B2B]">
-            <img src="/searchIcon.png" class="block size-5" alt="">
-            <input placeholder="Digite o nome Burger" class="block pl-2 flex-1 text-white outline-none" type="text">
-          </div>
+                <ul class="hidden md:flex">
+                    <li>Inicio</li>
+                    <li>Burgers</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="flex items-center flex-col pt-4 gap-5">
+                <div>
+                    <h1 class="text-white text-4xl text-center font-bold">
+                        O Hamburguer mais delicioso.😋
+                    </h1>
 
-          <div class="flex items-center p-4 justify-between   rounded-sm mt-2 bg-[#2B2B2B]">
-              <span class="text-white">Selecionar categoria</span>
-            <div >
-              <i class="fa-solid fa-arrow-down text-white"></i>
-            </div>
-          </div>
-      </section>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+                    <p class="text-white text-center font-semibold"
+                        >A primeira hamburgueria virtual que você faz o pedido
+                        online e come o burger através do computador.</p
+                    >
+                    <button
+                        class="text-white p-4 w-60 rounded-sm font-semibold bg-[#FE6A0F]"
+                        >Fazer pedido</button
+                    >
+                </div>
+
+                <div class="size-50">
+                    <img
+                        class="block"
+                        src="/heroBurger.png"
+                        alt=""
+                        srcset=""
+                    />
+                </div>
+            </section>
+
+            <section class="bg-[#1F1F1F] px-4 py-6">
+                <p class="text-2xl text-white my-8 text-center"
+                    >Pesquise o seu Hamburguer favorito!</p
+                >
+                <div class="flex rounded-sm items-center p-4 bg-[#2B2B2B]">
+                    <img
+                        src="/searchIcon.png"
+                        class="block size-5"
+                        alt=""
+                    />
+                    <input
+                        placeholder="Digite o nome Burger"
+                        class="block pl-2 flex-1 text-white outline-none"
+                        type="text"
+                    />
+                </div>
+
+                <div
+                    class="flex items-center p-4 justify-between rounded-sm mt-2 bg-[#2B2B2B]"
+                >
+                    <span class="text-white">Selecionar categoria</span>
+                    <div>
+                        <i class="fa-solid fa-arrow-down text-white"></i>
+                    </div>
+                </div>
+            </section>
+            <section> </section>
+        </main>
+        <footer> </footer>
+        <script
+            type="module"
+            src="/src/main.ts"
+        ></script>
+    </body>
 </html>
