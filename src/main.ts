@@ -1,24 +1,35 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+class Menu {
+    private btnEl;
+    private menuEl;
+    private btnTarget;
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+    constructor(btnClass: string, menuClass: string) {
+        this.btnEl = document.querySelector(btnClass) as HTMLElement;
+        this.menuEl = document.querySelector(menuClass) as HTMLUListElement;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+        this.initialEvents();
+
+        this.btnTarget = 'menuMobile' as string;
+    }
+
+    toggleMenu = (ev: Event) => {
+        const elTarget = ev.target as HTMLElement;
+        if (elTarget.id == this.btnTarget) {
+            if (this.menuEl.classList.contains('-translate-x-full')) {
+                this.menuEl.classList.remove('-translate-x-full');
+                this.menuEl.classList.add('translate-x-0');
+            } else {
+                this.menuEl.classList.add('-translate-x-full');
+                this.menuEl.classList.remove('translate-x-0');
+            }
+        }
+    };
+
+    initialEvents = () => {
+        this.btnEl.addEventListener('click', this.toggleMenu);
+    };
+}
+
+window.onload = () => {
+    new Menu('nav', 'ul');
+};
