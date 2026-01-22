@@ -17,24 +17,77 @@
         />
         <title>buger_delicious</title>
 
+    <header>
+      <nav
+        class="max-w-[980px] m-auto relative p-4 flex items-center justify-between"
+      >
+        <!--Logo-->
+        <a
+          class="flex items-center gap-1"
+          href="/"
+        >
+          <span class="text-white text-2xl md:text-4xl font-['Calistoga']"
+            >Burger</span
+          >
+          <span class="size-2 md:size-4 bg-[#FE6A0F] rounded-full"></span>
+          <span class="text-white text-2xl md:text-4xl font-['Calistoga']"
+            >Delicious</span
+          >
+        </a>
 
+        <!--menu Pc-->
 
-                <ul
-                    class="fixed top-0 transform transition-transform duration-500 -translate-x-full left-0 right-0 bottom-0 text-white md:flex z-1000 bg-black/100"
-                >
-                    <div class="flex items-center justify-between px-4 py-4">
-                        <li
-                            class="border-2 border-white px-4 py-2 rounded-sm cursor pointer"
-                            >Fazer pedido</li
-                        >
-                        <li class="md:hidden z-1000"
-                            ><i
-                                id="menuMobile"
-                                class="fa-solid fa-close text-white text-2xl"
-                            ></i
-                        ></li>
-                    </div>
+        <ul
+          class="md:flex hidden font-['Inter'] text-white gap-4 z-1000 bg-black/100"
+        >
+          <li class="p-4 text-white cursor-pointer font-medium text-xl"
+            >Inicio</li
+          >
+          <li class="p-4 text-xl font-medium cursor-pointer">Burgers</li>
+          <li class="p-4 text-xl font-medium cursor-pointer">Contato</li>
+        </ul>
 
+        <a
+          class="border-2 hidden font-semibold font-['Inter'] cursor-pointer border-white text-white px-4 py-2 rounded-sm cursor pointer"
+          >Fazer pedido
+        </a>
+
+        <!--mobile-->
+        <div
+          id="menuMobile"
+          class="md:hidden z-1000"
+        >
+          <i
+            id="menuMobile"
+            class="fa-solid fa-bars text-white text-2xl"
+          ></i>
+        </div>
+
+        <!--menu mobile-->
+
+        <ul
+          id="toggleMenu"
+          class="fixed md:hidden top-0 transform md:border-[none] transition-transform duration-500 -translate-x-full left-0 right-0 bottom-0 text-white md:flex z-1000 bg-black/100"
+        >
+          <div class="flex items-center justify-between px-4 py-4">
+            <li
+              class="border-2 font-semibold border-white text-white px-4 py-2 rounded-sm cursor pointer"
+              >Fazer pedido</li
+            >
+            <li class="md:hidden z-1000"
+              ><i
+                id="menuMobile"
+                class="fa-solid fa-close text-white text-2xl"
+              ></i
+            ></li>
+          </div>
+
+          <li class="p-4 text-white border-b-1 border-white">Inicio</li>
+          <li class="p-4 border-b-1 border-white">Burgers</li>
+          <li class="p-4 border-b-1 border-white">Contato</li>
+        </ul>
+      </nav>
+    </header>
       <!--SECAO DE HERO -->
       <section
         class="flex md:py-4 max-w-[980px] m-auto m-auto items-center justify-between md:flex-row flex-col gap-5"
