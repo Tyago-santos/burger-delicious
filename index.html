@@ -1,25 +1,43 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/vite.svg"
-        />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
-        <link
-            rel="stylesheet"
-            href="/src/style.css"
-        />
-        <title>buger_delicious</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style.css"
+    />
+    <title>Burger Delicious</title>
 
+    <!--LINKS DE TERCEIROS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black/100">
     <header>
       <nav
-        class="max-w-[980px] m-auto relative p-4 flex items-center justify-between"
+        class="max-w-[980px] md:py-4 p-4 md:px-0 m-auto relative flex items-center justify-between"
       >
         <!--Logo-->
         <a
@@ -48,7 +66,7 @@
         </ul>
 
         <a
-          class="border-2 hidden font-semibold font-['Inter'] cursor-pointer border-white text-white px-4 py-2 rounded-sm cursor pointer"
+          class="border-2 md:block hidden font-semibold font-['Inter'] border-white text-white px-4 py-2 rounded-sm cursor-pointer"
           >Fazer pedido
         </a>
 
@@ -88,13 +106,14 @@
         </ul>
       </nav>
     </header>
+    <main>
       <!--SECAO DE HERO -->
       <section
         class="flex md:py-4 max-w-[980px] m-auto m-auto items-center justify-between md:flex-row flex-col gap-5"
       >
         <div class="flex text-wrap items-center md:items-start flex-col gap-6">
           <h1
-            class="text-white font-['Calistoga'] text-5xl md:max-w-100 md:text-left text-center font-medium"
+            class="text-white font-['Calistoga'] md:text-5xl text-3xl md:max-w-100 md:text-left text-center font-medium"
           >
             O Hamburguer mais delicioso.😋
           </h1>
@@ -105,7 +124,7 @@
             o burger através do computador.</p
           >
           <button
-            class="text-white p-4 w-60 md rounded-sm font-semibold bg-[#FE6A0F]"
+            class="text-white p-4 w-60 cursor-pointer hover:text-[#FE6A0F] transition-all hover:border-2 hover:bg-black/100 border-2 border-[#FE6A0F] rounded-sm font-semibold bg-[#FE6A0F]"
             >Fazer pedido</button
           >
         </div>
@@ -122,7 +141,7 @@
       <!--SECAO DE SEARCH-->
       <section class="bg-[#1F1F1F]">
         <div
-          class="max-w-[980px] m-auto md:flex md:flex-col justify-between py-6"
+          class="max-w-[980px] px-4 m-auto md:flex md:flex-col justify-between py-6"
         >
           <h3
             class="text-2xl text-wrap md:text-3xl text-white my-8 md:text-left md:max-w-80 text-center"
@@ -154,11 +173,13 @@
         </div>
       </section>
 
-            <!--SECAO DE BURGERS PROMCATION-->
+      <!--SECAO DE BURGERS PROMCATION-->
 
       <section class="p-10">
         <div class="max-w-[980px] m-auto gap-4 grid grid-cols-1 md:grid-cols-3">
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all bg-[#1F1F1F]"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
                 src="/burger1.png"
@@ -176,12 +197,14 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-['Inter'] font-medium text-3xl"
                 >R$ 25,50</span
               >
             </div>
           </div>
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all bg-[#1F1F1F]"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
                 src="/burger2.png"
@@ -199,12 +222,14 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-medium font-['Inter'] text-3xl"
                 >R$ 25,50</span
               >
             </div>
           </div>
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all bg-[#1F1F1F]"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
                 src="/burger3.png"
@@ -222,12 +247,14 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-['Inter'] font-medium text-3xl"
                 >R$ 25,50</span
               >
             </div>
           </div>
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all bg-[#1F1F1F]"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
                 src="/burger4.png"
@@ -245,15 +272,17 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-['Inter'] font-medium text-3xl"
                 >R$ 25,50</span
               >
             </div>
           </div>
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all bg-[#1F1F1F]"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
-                src="/public/burger1.png"
+                src="/burger1.png"
                 class="block size-40"
                 alt=" burger"
               />
@@ -268,12 +297,14 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-['Inter'] text-3xl font-medium"
                 >R$ 25,50</span
               >
             </div>
           </div>
-          <div class="rounded-sm bg-[#1F1F1F]">
+          <div
+            class="rounded-sm bg-[#1F1F1F] cursor-pointer hover:border-2 border-2 hover:border-[#FE6A0F] duration-500 trasition-all"
+          >
             <div class="bg-[#2B2B2B] h-30 rounded-t-sm flex justify-center">
               <img
                 src="/burger2.png"
@@ -291,7 +322,7 @@
                 >Texas Burger</h4
               >
 
-              <span class="text-[#FE6A0F] font-['Inter'] text-3xl"
+              <span class="text-[#FE6A0F] font-['Inter'] text-3xl font-medium"
                 >R$ 25,50</span
               >
             </div>
